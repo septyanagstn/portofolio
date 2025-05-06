@@ -12,7 +12,7 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", marginBottom: "20px", position: "relative"}}>
           <Button
             variant="primary"
-            href="/CV_Septyana-Agustina.pdf"
+            href={`${process.env.PUBLIC_URL}/CV_Septyana-Agustina.pdf`}
             download
             style={{ maxWidth: "250px" }}
           >
@@ -23,7 +23,7 @@ function ResumeNew() {
         {/* Tampilan PDF */}
         <Row style={{ justifyContent: "center" }}>
           <iframe
-            src="/CV_Septyana-Agustina.pdf"
+            src={`${process.env.PUBLIC_URL}/CV_Septyana-Agustina.pdf`}
             title="CV Septyana Agustina"
             width="100%"
             height="800px"
