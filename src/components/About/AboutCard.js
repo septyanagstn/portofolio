@@ -13,7 +13,7 @@ function AboutCard() {
             <br />
             Saat ini saya merupakan Mahasiswa Teknik Informatika. 
             <br />
-            Sebelumnya, saya merupakan memiliki latar belakang Teknik Mesin.
+            Sebelumnya, saya memiliki latar belakang Teknik Mesin.
             Namun, saya memiliki ketertarikan terhadap teknologi informasi.
             <br />
             Bagi saya, peralihan ini adalah tantangan yang membuka banyak peluang untuk berkembang.
