@@ -5,6 +5,7 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import { motion } from "framer-motion";
 
 function About() {
   return (
@@ -30,7 +31,19 @@ function About() {
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            <motion.img 
+              src={laptopImg} 
+              alt="about" 
+              className="img-fluid" 
+              animate={{
+                y: [0, -15, 0],
+                scale: [1, 1.02, 1],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "easeInOut", 
+              }} />
           </Col>
         </Row>
         <h1 className="project-heading">

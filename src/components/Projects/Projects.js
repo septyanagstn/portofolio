@@ -2,18 +2,22 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import visualisasi from "../../Assets/Projects/visualisasi.png";
-import simulasi2d from "../../Assets/Projects/simulasi2d.jpg";
-import simulasi3d from "../../Assets/Projects/simulasi3d.png";
-import sportizen from "../../Assets/Projects/sportizen.png";
-import tictactoe from "../../Assets/Projects/tictactoe.png";
-import uiux from "../../Assets/Projects/uiux.png";
-import bioskop from "../../Assets/Projects/bioskop.png";
-import wahana from "../../Assets/Projects/wahana.png";
-import deepfake from "../../Assets/Projects/deepfake.png";
-import webdev from "../../Assets/Projects/webdev.png";
-import parkingdetection from "../../Assets/Projects/parkingdetection.png";
-import sipta from "../../Assets/Projects/sipta.png";
+import visualisasi from "../../Assets/Projects/visualisasi.webp";
+import simulasi2d from "../../Assets/Projects/simulasi2d.webp";
+import simulasi3d from "../../Assets/Projects/simulasi3d.webp";
+import sportizen from "../../Assets/Projects/sportizen.webp";
+import tictactoe from "../../Assets/Projects/tictactoe.webp";
+import uiux from "../../Assets/Projects/uiux.webp";
+import bioskop from "../../Assets/Projects/bioskop.webp";
+import wahana from "../../Assets/Projects/wahana.webp";
+import deepfake from "../../Assets/Projects/deepfake.webp";
+import webdev from "../../Assets/Projects/webdev.webp";
+import parkingdetection from "../../Assets/Projects/parkingdetection.webp";
+import sipta from "../../Assets/Projects/sipta.webp";
+import revou from "../../Assets/Projects/revou.webp";
+import skpi from "../../Assets/Projects/skpi.webp";
+import ta from "../../Assets/Projects/ta.webp";
+
 
 function Projects() {
   return (
@@ -51,6 +55,19 @@ function Projects() {
               4
               memanfaatkan struktur data double linked list queue. "
               ghLink="https://github.com/agim221/TugasBesar_SDA"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={revou}
+              isBlog={false}
+              title="RevoU - Intro to Software Engineering"
+              description="Membuat aplikasi web sederhana 'Mini Groceries' berupa landing page, yang merupakan
+              website untuk menampilkan produk-produk yang dijual oleh toko online. Website ini dibuat dengan native 
+              HTML, CSS, dan JavaScript dalam pembuatan Frontend dan Backend."
+              ghLink="https://github.com/septyanagstn/RevoU-Course"  
+              demoLink="https://septyanagstn.github.io/RevoU-Course/"   
             />
           </Col>
 
@@ -186,6 +203,31 @@ function Projects() {
               Sidang Akhir."              
               ghLink="https://github.com/sipta-jtk/sipta"
               demoLink="https://polban-space.cloudias79.com/sipta-dev/login"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={skpi}
+              isBlog={false}
+              title="Arutala Junior Back End Developer using Spring Boot"
+              description="Membuat REST API untuk simulai 'mini canteen' dengan arsitektur 
+              microservices yang terdiri dari dua service yaitu catalog & order serta database.
+              Dengan menggunaakan framework Spring Boot, database MySQL, dan Postman untuk testing API."              
+              ghLink="https://github.com/septyanagstn/mini_canteen-microservices-springboot-RestAPI"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ta}
+              isBlog={false}
+              title="Pengembangan Taksonomi Berbasis Clustering (Tugas Akhir)"
+              description="Melakukan analisis penerapan clustering untuk memperbaiki taksonomi tiket
+              helpdesk layanan TI di perusahaan Kabayan Group. Dengan menggunakan metode Recursive Spherical K-Means
+               & Model IndoSBERT untuk melakukan clustering terhadap tiket helpdesk yang ada. Hasil dari penelitian 
+               ini dapat digunakan untuk memperbaiki taksonomi tiket helpdesk yang ada di perusahaan."              
+              ghLink="https://github.com/septyanagstn/clustering_indosbert_recursive_spherical_k-means"
             />
           </Col>
         </Row>

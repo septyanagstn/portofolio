@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/profil.jpg";
+import myImg from "../../Assets/profil.webp";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -16,29 +16,29 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              <span className="purple"> TENTANG SAYA </span>
+              Sekilas <span className="purple"> TENTANG SAYA </span>
             </h1>
             <p className="home-about-body">
-              Saya adalah mahasiswa aktif yang memiliki minat dalam pemrograman
+              Saya adalah Lulusan Teknik Informatika yang memiliki minat dalam pemrograman.
               <br />
-              <br />Dalam bidang IT saya tertarik dengan 
+              <br />Dalam bidang IT, saya memiliki ketertarikan dan pengalaman dalam berbagai ranah pengembangan Perangkat Lunak, mulai dari  
               <i>
-                <b className="purple"> Web dan Mobile Development. </b>
+                <b className="purple"> Frontend, Backend, Full-Stack, hingga QA </b> baik dalam pengembangan Web maupun Mobile.
               </i>
               <br />
               <br />
-              Selain itu, saya juga sedikit tertarik dalam mengembangkan Machine Learning menggunakan <b className="purple">Python</b> dengan berbagai macam framework seperti
+              Selain itu, saya juga tertarik dalam mengembangkan AI/ML menggunakan <b className="purple">Python</b> dengan berbagai macam framework seperti
               <i>
                 <b className="purple">
                   {" "}
                   Tensorflow dan PyTorch
                 </b>
-              </i>
+              </i> untuk memenuhi kebutuhan nyata.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid rounded-circle" alt="avatar" />
+                <img src={myImg} className="img-fluid rounded-circle" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
